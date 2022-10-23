@@ -11,7 +11,7 @@ export const Add = () => {
 
 		const apiKey = process.env.REACT_APP_API_KEY;
 
-		fetch(`http://www.omdbapi.com/?apikey=${apiKey}&s=${e.target.value}`)
+		fetch(`https://www.omdbapi.com/?apikey=${apiKey}&s=${e.target.value}`)
 			.then((res) => res.json())
 			.then((data) => {
 				if (data.Search) {
